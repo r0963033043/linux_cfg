@@ -1,4 +1,4 @@
-# linux cfg
+# linux 設定檔
 
 在`/home`裡的檔案  
 
@@ -10,7 +10,7 @@
 
 `.vimrc`: vim
 
-`.xessionrc`: 輸入法
+`.xessionrc`: 中文輸入法fcitx
 
 
 
