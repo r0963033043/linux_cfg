@@ -1,6 +1,6 @@
 # linux 設定檔
 
-在`/home`裡的檔案  
+在`/home/user`裡的檔案  
 
 `.bashrc`: bash
 
