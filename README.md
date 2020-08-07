@@ -1,6 +1,7 @@
 # linux cfg
 
-在`/home`裡的檔案
+在`/home`裡的檔案  
+
 `.bashrc`: bash
 
 `.imwheelrc`: 滑鼠設定
@@ -13,8 +14,8 @@
 
 
 
-`/etc/ssh/ssh_config`
-`ssh_config`: 多重 ssh key 管理，免輸密碼
+`/etc/ssh/ssh_config`  
+`ssh_config`: 多重 ssh key 管理，clone 免輸密碼
 
 
 
