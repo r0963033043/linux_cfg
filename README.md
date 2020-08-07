@@ -15,7 +15,7 @@
 
 
 ## ssh key
-`~/.ssh/id_rsa`: 私鑰
+`~/.ssh/id_rsa`: 私鑰  
 `~/.ssh/id_rsa.pub`: 公鑰  
 
 `/etc/ssh/ssh_config`  
