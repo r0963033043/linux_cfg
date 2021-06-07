@@ -8,6 +8,11 @@ case $- in
       *) return;;
 esac
 
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -l'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -69,21 +74,23 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}'
 
-    PS1="$PS1"'\[\033[01;32m\]'         # Set color
-    PS1="$PS1"'\u@\h'                  # Show user and address
+    PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
+    PS1="$PS1"'[\d \t] '              # Show time
 
-    PS1="$PS1"'\[\033[00m\]'            # Set color
-    PS1="$PS1"': '                      # Show ':'
+    PS1="$PS1"'\[\033[1;31m\]'        # Set color: red
+    PS1="$PS1"'\u'                    # Show user
 
-    PS1="$PS1"'\[\033[01;34m\]'         # Set color
-    PS1="$PS1"'\w'                     # Show path
+    PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
+    PS1="$PS1"'@\h '                  # Show address
 
-    PS1="$PS1"'\[\033[36m\]'            # Set color
-    PS1="$PS1"'`__git_ps1` '            # Git bash function
+    PS1="$PS1"'\[\033[1;36m\]'        # Set color: cyan
+    PS1="$PS1"'\w'                    # Show path
 
-#    PS1="$PS1"'\n'                      # New Line
-    PS1="$PS1"'\[\033[00m\]'            # Set color
-    PS1="$PS1"'\$ '                     # Show '$'
+    PS1="$PS1"'\[\033[1;33m\]'        # Set color: yellow
+    PS1="$PS1"'`__git_ps1`'           # Git bash function
+
+    PS1="$PS1"'\[\033[00;1;37m\]'     # Set color: light gray
+    PS1="$PS1"'\n\$ '                 # Show New line, '$'
 
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -114,11 +121,6 @@ fi
 
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
