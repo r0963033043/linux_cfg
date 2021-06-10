@@ -2,7 +2,8 @@
 ## ubuntu
 ubuntu, kubuntu, linux mint
 ```bash
-apt install -y vim git tmux g++
+apt install -y vim git tmux g++ \
+      cmake
 ```
 
 
