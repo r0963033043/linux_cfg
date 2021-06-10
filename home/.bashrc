@@ -87,7 +87,7 @@ if [ "$color_prompt" = yes ]; then
     PS1="$PS1"'\w'                    # Show path
 
     PS1="$PS1"'\[\033[1;33m\]'        # Set color: yellow
-    PS1="$PS1"'`__git_ps1`'           # Git bash function
+    PS1="$PS1"'`parse_git_branch()'   # Git bash function
 
     PS1="$PS1"'\[\033[00;1;37m\]'     # Set color: light gray
     PS1="$PS1"'\n\$ '                 # Show New line, '$'
