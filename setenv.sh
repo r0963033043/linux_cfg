@@ -19,7 +19,7 @@ esac
 
 echo "Install packages"
 echo "vim tmux git g++ cmake"
-apt install -y vim tmux git g++ cmake\
+sudo apt install -y vim tmux git g++ cmake\
     xbindkeys xdotool
 
 
