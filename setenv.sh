@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Please run as sudo"
-
 echo "Choose install path:"
 echo "  1)Default   1"
 echo "  2)Customize 2"
