@@ -27,7 +27,7 @@ sudo apt install -y vim git tmux g++ cmake\
 `.xessionrc`  
 
 ### 滑鼠設定
-側按鍵 copy, paste
+側按鍵 copy, paste  
 [xbindkeys](https://steward-fu.github.io/website/phone/n900/maemo/xbindkeys.htm)  
 `.xbindkeysrc`  
 ```bash
