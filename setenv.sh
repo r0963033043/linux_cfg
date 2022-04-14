@@ -15,6 +15,10 @@ esac
 
 #echo $path
 
+echo "Set timezone"
+sudo timedatectl set-timezone Asia/Taipei
+ls -l /etc/localtime
+date
 
 
 echo "Install packages"
