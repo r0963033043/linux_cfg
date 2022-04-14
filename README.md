@@ -3,7 +3,7 @@
 ## Usage
 run
 ```bash
-sudo ./setenv.sh
+./setenv.sh
 ```
 Choose options  
   1) Use default path: `~`  
