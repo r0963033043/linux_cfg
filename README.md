@@ -41,6 +41,11 @@ sudo apt-get install xbindkeys xdotool
 ### tmux  
 [.tmux](https://github.com/gpakosz/.tmux.git)  
 `.tmux.conf`  
+```
+Ctrl+a
+C-a + '-'  : split current window horizontally
+C-a + '\'  : split current window vertically
+```
 
 ### vim  
 `.vimrc`  
