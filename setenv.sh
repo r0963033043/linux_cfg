@@ -21,8 +21,9 @@ ls -l /etc/localtime
 date
 
 
-echo "Install packages"
-echo "vim tmux git g++ cmake"
+echo "Install packages:  vim tmux git g++ cmake xbindkeys xdotool"
+#sudo apt update
+#sudo apt upgrade
 sudo apt install -y vim tmux git g++ cmake\
     xbindkeys xdotool
 
