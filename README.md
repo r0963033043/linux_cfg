@@ -39,7 +39,7 @@ sudo apt-get install xbindkeys xdotool
 `.bashrc`  
 
 ### tmux  
-[.tmux](git clone https://github.com/gpakosz/.tmux.git)
+[.tmux](git clone https://github.com/gpakosz/.tmux.git)  
 `.tmux.conf`  
 
 ### vim  
