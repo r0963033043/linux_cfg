@@ -1,7 +1,7 @@
 # Build a new OS environment
 
 ## Usage
-run as sudo
+run
 ```bash
 sudo ./setenv.sh
 ```
