@@ -18,36 +18,25 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Markdown
-"Plugin 'godlygeek/tabular'
-"Plugin 'plasticboy/vim-markdown'
-"set nofoldenable
-""" zr/zR: open folder
-""" zm/zM: close folder
 Plugin 'gabrielelana/vim-markdown'
 
-
-
-
 " Theme
-"Plugin 'sickill/vim-monokai'
 syntax enable
-"colorscheme monokai
 colorscheme moneyforward
-""colorscheme risto
-""colorscheme jay
-"colorscheme brogrammer
-
-
-
-"Bundle 'sonph/onehalf', {'rtp': 'vim/'}
-""Plugin 'sonph/onehalf'
-"colorscheme onehalflight
-"let g:airline_theme='onehalfdark'
-
-
 
 " File system explorer
 Plugin 'preservim/nerdtree'
+
+" Browse the tags of the file
+Plugin 'majutsushi/tagbar'
+
+Plugin 'preservim/nerdcommenter'
+
+" vim vlang format
+Plugin 'Chiel92/vim-autoformat'
+
+" Cursor
+Plugin 'wincent/terminus'
 
 " Syntax checking
 Plugin 'scrooloose/syntastic'
@@ -63,19 +52,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint'
 " Syntastic config end
-
-" Browse the tags of the file
-"Plugin 'preservim/tagbar'
-Plugin 'majutsushi/tagbar'
-
-Plugin 'preservim/nerdcommenter'
-"Plugin 'scrooloose/nerdcommenter'
-
-" vim vlang format
-Plugin 'Chiel92/vim-autoformat'
-
-" Cursor
-Plugin 'wincent/terminus'
 
 
 " The following are examples of different formats supported.

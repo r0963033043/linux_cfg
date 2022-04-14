@@ -55,15 +55,15 @@ syntax enable
 colorscheme moneyforward
 " File system explorer
 Plugin 'preservim/nerdtree'
-" Syntax checking
-Plugin 'scrooloose/syntastic'
 " Browse the tags of the file
 Plugin 'majutsushi/tagbar'
 Plugin 'preservim/nerdcommenter'
 " vim vlang format
 plugin 'chiel92/vim-autoformat'
-" cursor
+" Cursor
 plugin 'wincent/terminus'
+" Syntax checking
+Plugin 'scrooloose/syntastic'
 ```
 
 
