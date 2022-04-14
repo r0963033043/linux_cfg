@@ -1,10 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" Theme
-"Plugin 'sickill/vim-monokai'
-syntax enable
-colorscheme monokai
+set background=dark " 啟用暗色背景模式
+"set termguicolors " if you want to run vim in a terminal
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -14,6 +12,39 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Markdown
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"set nofoldenable
+""" zr/zR: open folder
+""" zm/zM: close folder
+Plugin 'gabrielelana/vim-markdown'
+
+
+
+
+" Theme
+"Plugin 'sickill/vim-monokai'
+syntax enable
+"colorscheme monokai
+colorscheme moneyforward
+""colorscheme risto
+""colorscheme jay
+"colorscheme brogrammer
+
+
+
+"Bundle 'sonph/onehalf', {'rtp': 'vim/'}
+""Plugin 'sonph/onehalf'
+"colorscheme onehalflight
+"let g:airline_theme='onehalfdark'
+
+
 
 " File system explorer
 Plugin 'preservim/nerdtree'
@@ -42,10 +73,6 @@ Plugin 'preservim/nerdcommenter'
 
 " vim vlang format
 Plugin 'Chiel92/vim-autoformat'
-
-" Airline
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 
 " Cursor
 Plugin 'wincent/terminus'
@@ -89,8 +116,8 @@ set shell=/bin/bash
 
 
 
-set tabstop=2       " 設定 Tab 長度為 4
-set shiftwidth=2    " 自動縮排長度為 4
+set tabstop=4       " 設定 Tab 長度為 4
+set shiftwidth=4    " 自動縮排長度為 4
 set expandtab       " 插入空白鍵(Space)取代 Tab
 retab               " 取代原有的 Tab 到新的設定
 " High light unwanted spaces in end of line
@@ -99,7 +126,6 @@ autocmd BufEnter * if &ft != 'help' | match ExtraWhitespace /\s\+$/ | endif
 autocmd BufEnter * if &ft == 'help' | match none /\s\+$/ | endif
 
 set ai              " 自動縮排 手動切換至貼上模式 :set paste
-set background=dark " 啟用暗色背景模式
 "set cursorline      " 顯示目前的游標位置
 set hls             " 標記關鍵字
 set number          " 顯示行號

@@ -1,3 +1,5 @@
+xbindkeys
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -77,7 +79,7 @@ if [ "$color_prompt" = yes ]; then
     PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
     PS1="$PS1"'[\d \t] '              # Show time
 
-    PS1="$PS1"'\[\033[1;31m\]'        # Set color: red
+    PS1="$PS1"'\[\033[1;91m\]'        # Set color: light red
     PS1="$PS1"'\u'                    # Show user
 
     PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
@@ -87,7 +89,7 @@ if [ "$color_prompt" = yes ]; then
     PS1="$PS1"'\w'                    # Show path
 
     PS1="$PS1"'\[\033[1;33m\]'        # Set color: yellow
-    PS1="$PS1"'`parse_git_branch()'   # Git bash function
+    PS1="$PS1"'`parse_git_branch()`'   # Git bash function
 
     PS1="$PS1"'\[\033[00;1;37m\]'     # Set color: light gray
     PS1="$PS1"'\n\$ '                 # Show New line, '$'
