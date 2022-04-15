@@ -51,16 +51,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Theme
+Plugin 'anoike/vim-moneyforward'
+
 " Airline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
 " Markdown
 Plugin 'gabrielelana/vim-markdown'
-
-" Theme
-syntax enable
-colorscheme moneyforward
 
 " File system explorer
 Plugin 'preservim/nerdtree'
@@ -128,3 +127,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+" Theme
+syntax enable
+colorscheme moneyforward
