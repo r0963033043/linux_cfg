@@ -22,8 +22,8 @@ date
 
 
 echo "Install packages:  vim tmux git g++ cmake xbindkeys xdotool"
-#sudo apt update
-#sudo apt upgrade
+sudo apt update
+sudo apt upgrade
 sudo apt install -y vim tmux git g++ cmake\
     xbindkeys xdotool
 
