@@ -76,13 +76,14 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}'
 
-    PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
+    PS1="$PS1"'\[\033[90m\]'          # Set color: gray
     PS1="$PS1"'[\d \t] '              # Show time
 
+#    PS1="$PS1"'\[\033[1;32m\]'        # Set color: green
     PS1="$PS1"'\[\033[1;91m\]'        # Set color: light red
     PS1="$PS1"'\u'                    # Show user
 
-    PS1="$PS1"'\[\033[00m\]'          # Set color: white(default)
+    PS1="$PS1"'\[\033[37m\]'          # Set color: light gray
     PS1="$PS1"'@\h '                  # Show address
 
     PS1="$PS1"'\[\033[1;36m\]'        # Set color: cyan
