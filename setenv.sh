@@ -38,8 +38,7 @@ cd -
 cp home/.* $path
 
 
-#mkdir $path/api && pushd $_
-#git clone https://github.com/gpakosz/.tmux.git
-#mv $path/.tmux.conf $path/.tmux.conf.old
-#ln -s $path/api/.tmux/.tmux.conf $path/.tmux.conf
+echo "Install vim Vundle"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
